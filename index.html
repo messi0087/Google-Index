@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Google-index</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            margin-top: 20px;
+            margin-right: 2px;
+        }
+        .header ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 0;
+        }
+
+        .header ul li{
+            margin: 0 10px;
+        }
+
+        .header ul li a{
+            color: rgba(21, 21, 21, 0.86);
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .header ul li a:hover{
+           text-decoration: underline;
+        }
+
+        .image-menus {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-top: 3px;
+        }
+
+
+        .button {
+            background: #3580fc;
+            border: none;
+            color: white;
+            font-size: 13px;
+            height: 23px;
+            padding: 0 4px;
+            margin-left: 5px;
+        }
+
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image{
+            margin-top: 157px;
+        }
+
+        .search {
+            height: 35px;
+            margin-top: 20px;
+        }
+
+        .search form{
+            font-size: 0;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .searchinput{
+            width: 535px;
+            margin: 0;
+            padding: 0 0 0 20px;
+            height: 35px;
+            display: block;
+            background: url("./images/语音.png")  no-repeat 505px 7px;
+            background-size: 20px 21px;
+            border: 1px solid #cecece;
+            border-radius: 20px;
+            outline: none;
+            font-size: 12px;
+            caret-color: #676767;
+        }
+
+        .searchinput:hover{
+            box-shadow: 0 0 4px #bcbcbc;
+        }
+
+        .search-button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .button-search{
+            background-color: rgba(234, 234, 234, 0.57);
+            border: none;
+            padding: 5px 15px;
+            margin: 0 5px;
+            color: #545454;
+        }
+
+        .footer{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: rgba(234, 234, 234, 0.57);
+            border-top: 1px solid #bbbbbb;
+            justify-content: space-between;
+        }
+
+
+        .textdown{
+            font-size: 12px;
+            margin: 10px 15px;
+        }
+
+        .textdown a{
+            color: #323232;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .textdown a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+        <ul>
+            <li>
+                <a href="#" title="Gmail">Gmail</a>
+            </li>
+            <li>
+                <a href="#" title="图片">图片</a>
+            </li>
+            <li>
+                <a href="#" title="菜单"><img class="image-menus" src="./images/菜单.png" alt="none"></a>
+            </li>
+            <li>
+                <button class="button" type="button">登录</button>
+            </li>
+        </ul>
+
+</header>
+
+<main class="main">
+
+    <div class="image">
+            <a href="#"
+               title="Welcome To The Google"
+               target="_blank"
+            >
+                <img src="./images/1.png" alt="none" width="272" height="92">
+            </a>
+        </div>
+
+    <div class="search">
+            <form>
+                <label>
+                    <input class="searchinput" type="search" maxlength="100">
+                </label>
+            </form>
+
+        <div class="search-button">
+            <button class="button-search" type="button">Google 搜索</button>
+            <button class="button-search" type="button">手气不错</button>
+        </div>
+        </div>
+
+</main>
+
+<footer class="footer">
+
+    <div class="textdown">
+        <a href="#">广告</a>
+        <a href="#">商务</a>
+        <a href="#">Google 大全</a>
+    </div>
+
+    <div class="textdown">
+        <a href="#">隐私权</a>
+        <a href="#">条款</a>
+        <a href="#">设置</a>
+    </div>
+
+</footer>
+
+</body>
+
+</html>
